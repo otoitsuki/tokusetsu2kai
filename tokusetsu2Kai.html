@@ -44,6 +44,8 @@
   <meta name="text:PreOrderDate" content="" />
   <meta name="text:PreOrder URL" content="" />
   <meta name="text:Price" content="" />
+  <meta name="text:PS" content="" />
+
 
   <meta name="text:Store01 Name" content="" />
   <meta name="text:Store01 URL" content="" />
@@ -181,7 +183,7 @@
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+    js.src = "//connect.facebook.net/zh-tw/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
   {/block:IfEnableFacebookButton}
@@ -226,7 +228,7 @@
 
   <div class="section-wrapper">
 
-        <section id="spec" class="section">
+    <section id="spec" class="section">
       <div class="content">
         {block:IfIntroduction}
           <h2>{text:Introduction Heading}</h2>
@@ -309,9 +311,15 @@
                 </td>
               </tr>
             {/block:IfStore01Name}
+            {block:IfPS}
+            <tr>
+              <th>注意事項</th>
+              <td>{text:PS}</td>
+            </tr>
+            {/block:IfPS}
           </tbody>
         </table>
-        {block:IfPreOrderDate}
+        {block:IfPS}
           <div class="available">
             <h3>開放預定中！</h3>
             <span class="available-btn btn btn-large"><a href="{text:PreOrder URL}" target="_blank">填寫預定單</a></span>

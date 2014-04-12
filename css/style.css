@@ -426,7 +426,7 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:h
 }
 
 #header-image .header-image-mask {
-    background: url(../images/header-image-mask.png) repeat-y center center;
+    background: url(http://sanographix.github.io/public/tumblr/tokusetsu2/images/header-image-mask.png) repeat-y center center;
     height: 600px;
     position: absolute;
     top: 0;
@@ -680,7 +680,7 @@ section.section:nth-child(3n+3) {
 
 .list .meta {
     color: #9da3af;
-    font-size: 90%
+    margin-top: 5px;
 }
 
 #staff .list {
