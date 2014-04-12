@@ -19,6 +19,14 @@
   <meta name="select:ThemeColor" content="blue" title="Blue">
   <meta name="select:ThemeColor" content="gray" title="Smoke">
 
+  <meta name="image:Main Image" content="//sanographix.github.io/public/tumblr/tokusetsu2/images/header-template.jpg"/>
+  <meta name="image:Jacket" content=""/>
+  <meta name="image:Pic sample01" content=""/>
+  <meta name="image:Pic sample02" content=""/>
+  <meta name="image:Pic sample03" content=""/>
+  <meta name="image:Pic sample04" content=""/>
+  <meta name="image:Pic sample05" content=""/>
+
   <meta name="text:Introduction" content="" />
   <meta name="text:Introduction Heading" content="Introduction" />
   <meta name="text:Youtube Embed Code" content="" />
@@ -33,7 +41,7 @@
   <meta name="text:Author" content="" />
   <meta name="text:Guest Author" content="" />
   <meta name="text:First Event" content="" />
-  <meta name="text:PreOrder" content="" />
+  <meta name="text:PreOrderDate" content="" />
   <meta name="text:PreOrder URL" content="" />
   <meta name="text:Price" content="" />
 
@@ -46,36 +54,36 @@
   <meta name="text:Store04 Name" content="" />
   <meta name="text:Store04 URL" content="" />
 
-  <meta name="text:Novel-sample01 Title" content="" />
-  <meta name="text:Novel-sample01 Description" content="" />
-  <meta name="text:Novel-sample01 Link" content="" />
-  <meta name="text:Novel-sample02 Title" content="" />
-  <meta name="text:Novel-sample02 Description" content="" />
-  <meta name="text:Novel-sample02 Link" content="" />
-  <meta name="text:Novel-sample03 Title" content="" />
-  <meta name="text:Novel-sample03 Description" content="" />
-  <meta name="text:Novel-sample03 Link" content="" />
-  <meta name="text:Novel-sample04 Title" content="" />
-  <meta name="text:Novel-sample04 Description" content="" />
-  <meta name="text:Novel-sample04 Link" content="" />
-  <meta name="text:Novel-sample05 Title" content="" />
-  <meta name="text:Novel-sample05 Description" content="" />
-  <meta name="text:Novel-sample05 Link" content="" />
-  <meta name="text:Novel-sample06 Title" content="" />
-  <meta name="text:Novel-sample06 Description" content="" />
-  <meta name="text:Novel-sample06 Link" content="" />
-  <meta name="text:Novel-sample07 Title" content="" />
-  <meta name="text:Novel-sample07 Description" content="" />
-  <meta name="text:Novel-sample07 Link" content="" />
-  <meta name="text:Novel-sample08 Title" content="" />
-  <meta name="text:Novel-sample08 Description" content="" />
-  <meta name="text:Novel-sample08 Link" content="" />
-  <meta name="text:Novel-sample09 Title" content="" />
-  <meta name="text:Novel-sample09 Description" content="" />
-  <meta name="text:Novel-sample09 Link" content="" />
-  <meta name="text:Novel-sample10 Title" content="" />
-  <meta name="text:Novel-sample10 Description" content="" />
-  <meta name="text:Novel-sample10 Link" content="" />
+  <meta name="text:Novel sample01 Title" content="" />
+  <meta name="text:Novel sample01 Description" content="" />
+  <meta name="text:Novel sample01 Link" content="" />
+  <meta name="text:Novel sample02 Title" content="" />
+  <meta name="text:Novel sample02 Description" content="" />
+  <meta name="text:Novel sample02 Link" content="" />
+  <meta name="text:Novel sample03 Title" content="" />
+  <meta name="text:Novel sample03 Description" content="" />
+  <meta name="text:Novel sample03 Link" content="" />
+  <meta name="text:Novel sample04 Title" content="" />
+  <meta name="text:Novel sample04 Description" content="" />
+  <meta name="text:Novel sample04 Link" content="" />
+  <meta name="text:Novel sample05 Title" content="" />
+  <meta name="text:Novel sample05 Description" content="" />
+  <meta name="text:Novel sample05 Link" content="" />
+  <meta name="text:Novel sample06 Title" content="" />
+  <meta name="text:Novel sample06 Description" content="" />
+  <meta name="text:Novel sample06 Link" content="" />
+  <meta name="text:Novel sample07 Title" content="" />
+  <meta name="text:Novel sample07 Description" content="" />
+  <meta name="text:Novel sample07 Link" content="" />
+  <meta name="text:Novel sample08 Title" content="" />
+  <meta name="text:Novel sample08 Description" content="" />
+  <meta name="text:Novel sample08 Link" content="" />
+  <meta name="text:Novel sample09 Title" content="" />
+  <meta name="text:Novel sample09 Description" content="" />
+  <meta name="text:Novel sample09 Link" content="" />
+  <meta name="text:Novel sample10 Title" content="" />
+  <meta name="text:Novel sample10 Description" content="" />
+  <meta name="text:Novel sample10 Link" content="" />
 
   <meta name="text:Staff01 Name" content="" />
   <meta name="text:Staff01 Role" content="" />
@@ -115,10 +123,6 @@
   <meta name="if:Enable Plurk Button" content="1"/>
 
   <meta name="text:Blog Domain" content="" />
-  <meta name="image:Main Image" content="//sanographix.github.io/public/tumblr/tokusetsu2/images/header-template.jpg"/>
-  <meta name="image:Jacket" content=""/>
-  <meta name="image:Pic-sample1" content=""/>
-  <meta name="image:Pic-sample2" content=""/>
 
   <title>{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}{block:IndexPage} - {text:Circle Name}{/block:IndexPage}</title>
   {block:TagPage}
@@ -143,7 +147,7 @@
     <meta property="og:description" content="{MetaDescription}">
   {/block:Description}
 
-  <link rel="stylesheet" href="http://sanographix.github.io/public/tumblr/tokusetsu2/css/style.css" />
+  <link rel="stylesheet" href="//sanographix.github.io/public/tumblr/tokusetsu2/css/style.css" />
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,300italic' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="{Favicon}">
   <link rel="canonical" href="{block:IndexPage}http://{text:Blog Domain}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}"/>
@@ -177,46 +181,37 @@
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
   {/block:IfEnableFacebookButton}
 
   <header id="globalheader">
-    <div class="globalheader-inner content">
+    <div class="globalheader-inner">
       <h1>
         <a href="/">{Title}</a>
       </h1>
         <nav class="header-nav">
           <ul>
-            {block:IndexPage}
-             {block:Pages}
               <li>
                 <a href="#spec">作品簡介</a>
               </li>
               <li>
                 <a href="#pic-sample">漫畫試閱</a>
               </li>
+              {block:IfNovelsample01Title}
               <li>
                 <a href="#novel-sample">小說試閱</a>
               </li>
+              {/block:IfNovelsample01Title}
               <li>
                 <a href="#staff">作者名單</a>
               </li>
-              {block:IfCircle Plurk}
+              {block:IfEnablePlurkButton}
               <li>
                 <a href="{text:Circle Plurk}" target="_blank">社團噗浪</a>
               </li>
-              {/block:IfCircle Plurk}
-              {/block:Pages}
-            {/block:IndexPage}
-           <!--  {block:HasPages}
-              {block:Pages}
-                <li>
-                  <a href="{URL}">{Label}</a>
-                </li>
-              {/block:Pages}
-            {/block:HasPages} -->
+              {/block:IfEnablePlurkButton}
           </ul>
         </nav>
     </div>
@@ -231,7 +226,7 @@
 
   <div class="section-wrapper">
 
-    <section id="spec" class="section">
+        <section id="spec" class="section">
       <div class="content">
         {block:IfIntroduction}
           <h2>{text:Introduction Heading}</h2>
@@ -271,12 +266,12 @@
               <th>首販場次</th>
               <td>{text:First Event}</td>
             </tr>
-            {block:IfPreOrder}
+            {block:IfPreOrderDate}
             <tr>
               <th>預定截止</th>
-              <td>{text:PreOrder}</td>
+              <td>{text:PreOrderDate}</td>
             </tr>
-            {/block:IfPreOrder}
+            {/block:IfPreOrderDate}
             <tr>
               <th>價錢</th>
               <td>{text:Price}</td>
@@ -316,12 +311,12 @@
             {/block:IfStore01Name}
           </tbody>
         </table>
-        {block:IfPreOrder}
+        {block:IfPreOrderDate}
           <div class="available">
             <h3>開放預定中！</h3>
             <span class="available-btn btn btn-large"><a href="{text:PreOrder URL}" target="_blank">填寫預定單</a></span>
           </div>
-        {/block:IfPreOrder}
+        {/block:IfPreOrderDate}
 
         <ul class="social-buttons">
           {block:IfEnablePlurkButton}
@@ -366,96 +361,117 @@
       </div>
     </section>
 
-    {block:IfPic-sample1Image}
+     {block:IfPicsample01Image}
       <section id="pic-sample" class="section">
         <div class="content">
-          <h3>Banner</h3>
+          <h3>漫畫試閱</h3>
+          {block:IfPicsample01Image}
           <span class="banner-box">
-            <img src="{image:Pic-sample1}" alt="Pic-sample1">
+            <img src="{image:Pic sample01}" alt="Pic sample01">
           </span>
+          {/block:IfPicsample01Image}
+          {block:IfPicsample02Image}
           <span class="banner-box">
-            <img src="{image:Pic-sample2}" alt="Pic-sample2">
+            <img src="{image:Pic sample02}" alt="Pic sample02">
           </span>
+          {/block:IfPicsample02Image}
+          {block:IfPicsample03Image}
+          <span class="banner-box">
+            <img src="{image:Pic sample03}" alt="Pic sample03">
+          </span>
+          {/block:IfPicsample03Image}
+          {block:IfPicsample04Image}
+          <span class="banner-box">
+            <img src="{image:Pic sample04}" alt="Pic sample04">
+          </span>
+          {/block:IfPicsample04Image}
+          {block:IfPicsample05Image}
+          <span class="banner-box">
+            <img src="{image:Pic sample04}" alt="Pic sample04">
+          </span>
+          {/block:IfPicsample05Image}
         </div>
       </section>
-    {block:IfPic-sample1Image}
+    {/block:IfPicsample01Image}
 
     <section id="novel-sample" class="section">
+      {block:IfNovelsample01Title}
       <div class="content">
         <h3>小說試閱</h3>
         <ol class="list">
-          {block:IfNovel-sample01Title}
+          {block:IfNovelsample01Title}
             <li>
               <span class="number">01</span>
-              <span class="title"><a href="{text:Novel-sample01 Link}">{text:Novel-sample01 Title}</a></span>
-              <span class="meta">{text:Novel-sample01 Description}</span>
+              <span class="title"><a href="{text:Novel sample01 Link}">{text:Novel sample01 Title}</a></span>
+              <span class="meta">{text:Novel sample01 Description}</span>
             </li>
-          {/block:IfNovel-sample01Title}
-          {block:IfNovel-sample02Title}
+          {/block:IfNovelsample01Title}
+          {block:IfNovelsample02Title}
             <li>
               <span class="number">02</span>
-              <span class="title"><a href="{text:Novel-sample02 Link}">{text:Novel-sample02 Title}</a></span>
-              <span class="meta">{text:Novel-sample02 Description}</span>
+              <span class="title"><a href="{text:Novel sample02 Link}">{text:Novel sample02 Title}</a></span>
+              <span class="meta">{text:Novel sample02 Description}</span>
             </li>
-          {/block:IfNovel-sample02Title}
-          {block:IfNovel-sample03Title}
+          {/block:IfNovelsample02Title}
+          {block:IfNovelsample03Title}
             <li>
               <span class="number">03</span>
-              <span class="title"><a href="{text:Novel-sample03 Link}">{text:Novel-sample03 Title}</a></span>
-              <span class="meta">{text:Novel-sample03 Description}</span>
+              <span class="title"><a href="{text:Novel sample03 Link}">{text:Novel sample03 Title}</a></span>
+              <span class="meta">{text:Novel sample03 Description}</span>
             </li>
-          {block:IfNovel-sample03Title}
-          {block:IfNovel-sample04Title}
+          {block:IfNovelsample03Title}
+          {block:IfNovelsample04Title}
             <li>
               <span class="number">04</span>
-              <span class="title"><a href="{text:Novel-sample04 Link}">{text:Novel-sample04 Title}</a></span>
-              <span class="meta">{text:Novel-sample04 Description}</span>
+              <span class="title"><a href="{text:Novel sample04 Link}">{text:Novel sample04 Title}</a></span>
+              <span class="meta">{text:Novel sample04 Description}</span>
             </li>
-          {/block:IfNovel-sample04Title}
-          {block:IfNovel-sample05Title}
+          {/block:IfNovelsample04Title}
+          {block:IfNovelsample05Title}
             <li>
               <span class="number">05</span>
-              <span class="title"><a href="{text:Novel-sample05 Link}">{text:Novel-sample05 Title}</a></span>
-              <span class="meta">{text:Novel-sample05 Description}</span>
+              <span class="title"><a href="{text:Novel sample05 Link}">{text:Novel sample05 Title}</a></span>
+              <span class="meta">{text:Novel sample05 Description}</span>
             </li>
-          {/block:IfNovel-sample05Title}
-          {block:IfNovel-sample06Title}
+          {/block:IfNovelsample05Title}
+          {block:IfNovelsample06Title}
             <li>
               <span class="number">06</span>
-              <span class="title"><a href="{text:Novel-sample06 Link}">{text:Novel-sample06 Title}</a></span>
-              <span class="meta">{text:Novel-sample06 Description}</span>
+              <span class="title"><a href="{text:Novel sample06 Link}">{text:Novel sample06 Title}</a></span>
+              <span class="meta">{text:Novel sample06 Description}</span>
             </li>
-          {block:IfNovel-sample06Title}
-          {block:IfNovel-sample07Title}
+          {block:IfNovelsample06Title}
+          {block:IfNovelsample07Title}
             <li>
               <span class="number">07</span>
-              <span class="title"><a href="{text:Novel-sample07 Link}">{text:Novel-sample07 Title}</a></span>
-              <span class="meta">{text:Novel-sample07 Description}</span>
+              <span class="title"><a href="{text:Novel sample07 Link}">{text:Novel sample07 Title}</a></span>
+              <span class="meta">{text:Novel sample07 Description}</span>
             </li>
-          {/block:IfNovel-sample07Title}
-          {block:IfNovel-sample08Title}
+          {/block:IfNovelsample07Title}
+          {block:IfNovelsample08Title}
             <li>
               <span class="number">08</span>
-              <span class="title"><a href="{text:Novel-sample08 Link}">{text:Novel-sample08 Title}</a></span>
-              <span class="meta">{text:Novel-sample08 Description}</span>
+              <span class="title"><a href="{text:Novel sample08 Link}">{text:Novel sample08 Title}</a></span>
+              <span class="meta">{text:Novel sample08 Description}</span>
             </li>
-          {/block:IfNovel-sample08Title}
-          {block:IfNovel-sample09Title}
+          {/block:IfNovelsample08Title}
+          {block:IfNovelsample09Title}
             <li>
               <span class="number">09</span>
-              <span class="title"><a href="{text:Novel-sample09 Link}">{text:Novel-sample09 Title}</a></span>
-              <span class="meta">{text:Novel-sample09 Description}</span>
+              <span class="title"><a href="{text:Novel sample09 Link}">{text:Novel sample09 Title}</a></span>
+              <span class="meta">{text:Novel sample09 Description}</span>
             </li>
-          {block:IfNovel-sample09Title}
-          {block:IfNovel-sample10Title}
+          {block:IfNovelsample09Title}
+          {block:IfNovelsample10Title}
             <li>
               <span class="number">10</span>
-              <span class="title"><a href="{text:Novel-sample10 Link}">{text:Novel-sample10 Title}</a></span>
-              <span class="meta">{text:Novel-sample10 Description}</span>
+              <span class="title"><a href="{text:Novel sample10 Link}">{text:Novel sample10 Title}</a></span>
+              <span class="meta">{text:Novel sample10 Description}</span>
             </li>
-          {block:IfNovel-sample10Title}
+          {block:IfNovelsample10Title}
         </ol>
       </div>
+      {/block:IfNovelsample01Title}
     </section>
 
     {block:IfYoutubeEmbedCode}
@@ -476,9 +492,19 @@
       </section>
     {/block:IfNicovideoEmbedCode}
 
+    {block:IfSoundcloudEmbedCode}
+      <section id="soundcloud" class="section">
+        <div class="content">
+          <h3>Soundcloud</h3>
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F{text:Soundcloud Embed Code}&amp;color=ff6600&amp;auto_play=false&amp;show_artwork=true"></iframe>
+        </div>
+      </section>
+    {/block:IfSoundcloudEmbedCode}
+
+
     <section id="staff" class="section">
       <div class="content">
-        <h3>Staff</h3>
+        <h3>作者群</h3>
         <ul class="list">
           {block:IfStaff01Name}
             <li>
@@ -627,7 +653,7 @@
       </p>
       <p>
       <!-- ↓ ここのリンク消さないでほしいっす -->
-        <a href="http://sanographix.github.io/tumblr/tokusetsu2/" target="_blank">Tokusetsu 2 Kai</a> theme designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a> arranged by KisekiXKiseki
+        <a href="http://sanographix.github.io/tumblr/tokusetsu2/" target="_blank">Tokusetsu 2</a> theme designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a>,<a href="http://sanographix.github.io/tumblr/tokusetsu2/" target="_blank">Tokusetsu 2 Kai</a> arranged by KisekiXKiseki
       </p>
     </div>
   </footer>
