@@ -781,6 +781,7 @@ section.section:nth-child(3n+3) {
 }
 
 .entry-content {
+    color: #FFF;
     text-align: left
 }
 
