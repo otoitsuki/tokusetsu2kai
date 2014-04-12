@@ -322,7 +322,7 @@
           {block:IfEnablePlurkButton}
           <li class="social-button">
             <a href="javascript: void(window.open('http://www.plurk.com/?qualifier=shares&status=' .concat(encodeURIComponent(location.href)) .concat(' ') .concat('(') .concat(encodeURIComponent(document.title)) .concat(')')));">
-              <img src="image/plurk.png">
+              <img src="http://statics.plurk.com/bda225d234426cccca300c551f60438e.png">
             </a>
           </li>
           {/block:IfEnablePlurkButton}
@@ -648,12 +648,12 @@
   <footer id="footer">
     <div class="content">
       <p>
-        ©{CopyrightYears} {Title}<br/>
+        {Title}  ©  {block:IfCircleURL}<a href="{text:Circle URL}" target="_blank">{/block:IfCircleURL}{text:Circle Name}{block:IfCircleURL}</a>{/block:IfCircleURL}<br/>
         {text:Footer Text}
       </p>
       <p>
       <!-- ↓ ここのリンク消さないでほしいっす -->
-        <a href="http://sanographix.github.io/tumblr/tokusetsu2/" target="_blank">Tokusetsu 2</a> theme designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a>,<a href="http://otoitsuki.github.io/tokusetsu2kai/" target="_blank">Tokusetsu 2 Kai</a> arranged by KisekiXKiseki
+        <a href="http://otoitsuki.github.io/tokusetsu2kai/" target="_blank">Tokusetsu 2 Kai</a> is based on <a href="http://sanographix.github.io/tumblr/tokusetsu2/" target="_blank">Tokusetsu 2</a>(<a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET)</a>
       </p>
     </div>
   </footer>
